@@ -24,6 +24,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 			        $point =  $row["qrcode_points"];
 
 			    }
+			    if($point != 0){
 			    	$sql = "SELECT * FROM member where member_studentID = '$registrationID'";
 					$result = $conn->query($sql);
 					$currentPoints = 0;
@@ -50,7 +51,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 						}
 
 					}
-
+			    }else{
+			    	echo "Zero Points ! ";
+			    }
 			}else{
 				 
 			}
