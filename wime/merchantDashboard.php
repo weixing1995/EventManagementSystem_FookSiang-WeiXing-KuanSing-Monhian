@@ -308,11 +308,11 @@
 
 
 
-        <!-- <div>
+        <div>
 
           <button class="btn btn-primary" type="button" onclick="exportPhp();">Export</button>
 
-        </div> -->
+        </div>
 
       </div>
 
@@ -321,29 +321,6 @@
       <footer class="text-center bg-color3" id="footer-center" style="margin-top:30px;">
 
         <div class="container">
-
-          <p class="editContent">
-
-            &copy; 2016<br>
-
-          </p>
-
-
-
-          <p>
-
-            Developed by <strong>Lai Fook Siang</strong><br>
-
-            Contact Email: <strong><a href="mailto:leolai728@live.com" target=
-
-            "_top">leolai728@live.com</a></strong><br>
-
-            View my profile on Linkedln:<strong><a href=
-
-            "https://my.linkedin.com/in/fook-siang-lai-999391107">https://my.linkedin.com/in/fook-siang-lai-999391107</a></strong>
-
-          </p>
-
 
 
           <p>

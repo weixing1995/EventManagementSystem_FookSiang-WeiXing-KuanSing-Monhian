@@ -525,7 +525,7 @@
     updateClock(); // run function once at first to avoid delay
     var timeinterval = setInterval(updateClock,1000);
     function updateClock(){
-      var t = getTimeRemaining('2016-11-16 10:00:00');
+      var t = getTimeRemaining('2017-1-16 10:00:00');
       document.getElementById("days").innerText  = t.days;
       document.getElementById("hours").innerText  = t.hours;
       document.getElementById("minutes").innerText  = t.minutes;
