@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>WI-ME II</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/form-elements.css">
+        <link href="css/login.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <style type="text/css">
+        .navbar{min-height: 70px;}
+        </style>
+    </head>
+
+    <body style="background-image: url('images/1.jpg') !important;">
+    	<nav class="navbar bg-color1 dark-bg navbar-fixed-top" style=
+      "background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: none;">
+        <div class="container-fluid">
+          <a class="navbar-brand goto" href="index.php"><img alt="Your logo" height=
+          "25" src="images/uploads/css.png" style=
+          "width: 60px; height: 50px; border-radius: 0px; border-color: rgb(0, 192, 255); border-style: none; border-width: 1px;"></a>
+          <button class=
+          "round-toggle navbar-toggle menu-collapse-btn collapsed" data-target=
+          ".navMenuCollapse" data-toggle="collapse"><span class=
+          "icon-bar"></span> <span class="icon-bar"></span> <span class=
+          "icon-bar"></span></button>
+          <div class="collapse navbar-collapse navMenuCollapse">
+          </div>
+        </div>
+      </nav>
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                	
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text" style="margin-top:20px;">
+                            <h1><strong>WI-ME2</strong> Login &amp; Register Forms</h1>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+	                        	<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Login to our site</h3>
+	                            		<p>Enter username and password to log on:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-lock"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="index.php" method="post" class="login-form" id="loginForm">
+				                    	<div class="form-group">
+                                            
+				                    		<label class="sr-only" for="form-username">Username</label>
+                                            <label style="color:red;display:none" id="loginusernamevalidation">* User Name Field Are Require to Fill in</label>
+				                        	<input type="text" name="form-username" placeholder="Username" class="form-username form-control" id="form-username">
+				                        </div>
+				                        <div class="form-group">
+
+				                        	<label class="sr-only" for="form-password">Password</label>
+                                            <label style="color:red;display:none" id="loginpasswordvalidator">* Password Field Are Require to Fill in</label>
+				                        	<input type="password" name="form-password" placeholder="Password" class="form-password form-control" id="form-password">
+				                        </div>
+				                        <button class="btn">Sign in</button>
+				                    </form>
+			                    </div>
+		                    </div>	                
+
+                        </div>
+                        
+                        <div class="col-sm-1 middle-border"></div>
+                        <div class="col-sm-1"></div>
+                        	
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Sign up now</h3>
+	                            		<p>Fill in the form below to get instant access:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="index.php" method="post" class="registration-form" id="registrationForm">
+				                    	<div class="form-group">
+				                    		<label class="sr-only">Full Name</label>
+                                            <label style="color:red;display:none" id="usernamevalidation">* User Name Field Are Require to Fill in</label>
+				                        	<input id="signupUserName" type="text" name="form-first-name" placeholder="Full Name" class="form-control" maxlength="30">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only">Student Registration Number</label>
+                                            <label style="color:red;display:none" id="registrationvalidator">* Student Registration Number Field Are Require to Fill in</label>
+                                            <label style="color:red;display:none" id="registrationformatvalidator">* Student Registration Number Format is incorrect</label>
+				                        	<input id="studentID" type="text" name="form-id" placeholder="eg:16WAD10202" class="form-control" maxlength="10" min"10">
+				                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only">Course</label>
+                                            <label style="color:red;display:none" id="coursevalidation">* Course Are Require to Fill in</label>
+                                            <input id="course" type="text" name="form-first-name" placeholder="Course" class="form-control" maxlength="30">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only">Contact Number</label>
+                                            <label style="color:red;display:none" id="phonevalidator">* Contact Number Field Are Require to Fill in</label>
+                                            <label style="color:red;display:none" id="phoneformatvalidator">* Contact Number Format is incorrect</label>
+                                            <input id="phone" type="text" name="form-id" placeholder="eg:0166400340" class="form-control" maxlength="12">
+                                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only">Password</label>
+                                            <label style="color:red;display:none" id="passwordvalidator">* Password Field Are Require to Fill in</label>
+				                        	<input id="signupPassword" type="password" name="form-password" placeholder="Password" class="form-control" maxlength="30">
+				                        </div>
+				                        <button type="submit" class="btn">Sign up</button>
+				                    </form>
+			                    </div>
+                        	</div>
+                        	
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Footer -->
+        <footer>
+        	<div class="container">
+        		<div class="row">
+        			
+        			<div class="col-sm-8 col-sm-offset-2">
+        				<div class="footer-border"></div>
+        				<p class="editContent">&copy; 2016<br><p>Developed by <strong>Lai Fook Siang</strong> <br>Contact Email: <strong><a href="mailto:leolai728@live.com" target="_top">leolai728@live.com</a></strong><br>View my profile on Linkedln: <strong><a href="https://my.linkedin.com/in/fook-siang-lai-999391107">https://my.linkedin.com/in/fook-siang-lai-999391107</a></strong></p></p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="scripts/jquery-1.11.2.min.js"></script>
+    	<script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/jquery.backstretch.min.js"></script>
+        <script src="scripts/scripts.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+             var myInput = document.getElementById('signupPassword');
+             myInput.onpaste = function(e) {
+               e.preventDefault();
+             }
+            }
+        </script>
+        <script type="text/javascript">
+           $('#registrationForm').submit(function() {
+            var validationCounter = 0;
+            var user = document.getElementById('signupUserName');
+            var studentID = document.getElementById('studentID');
+            var password = document.getElementById('signupPassword');
+            var phone = document.getElementById('phone');
+            var course = document.getElementById('course');
+            var letterNumber = /^[a-zA-Z]+$/;  
+               
+                    var myKeyVals = {"password" : document.getElementById('signupPassword').value, "registrationID" : document.getElementById('studentID').value, "username" : document.getElementById('signupUserName').value, "phone" : document.getElementById('phone').value, "course" : document.getElementById('course').value};
+                    var json = "";
+                    $.ajax({
+                        type: "POST",
+                        url: "registration.php",
+                        data: myKeyVals,
+                        dataType: 'text',
+                        async: false,
+                        success: function(data) {
+                            console.log(data);
+                            json = data;
+                        }
+                    });
+                    if (json == "Register Success") {
+                        alert(json);
+                        return true;
+                    } else {
+                        alert(json);
+                        return false;
+                    }
+
+            });
+        </script>
+
+        <script type="text/javascript">
+           $('#loginForm').submit(function() {
+            
+                    if(!document.getElementById('form-username').value.match(/^[A-Za-z]+$/)){
+                        var myKeyVals = {"password" : document.getElementById('form-password').value, "username" : document.getElementById('form-username').value};
+                        var json = "";
+                        $.ajax({
+                            type: "POST",
+                            url: "login.php",
+                            data: myKeyVals,
+                            dataType: 'text',
+                            async: false,
+                            success: function(data) {
+                                json = data;
+                            }
+                        });
+                        if (json == "Login Success") {
+                            alert(json);
+                            window.location.replace ("index.php");
+
+                            
+                        } else {
+                            alert(json);
+                            return false;
+                        }
+                        
+                    }else{
+                        var myKeyVals = {"password" : document.getElementById('form-password').value, "username" : document.getElementById('form-username').value};
+                        var json = "";
+                        $.ajax({
+                            type: "POST",
+                            url: "merchantlogin.php",
+                            data: myKeyVals,
+                            dataType: 'text',
+                            async: false,
+                            success: function(data) {
+                                json = data;
+                            }
+                        });
+                        if (json == "Login Success") {
+                            alert(json);
+                            window.location.assign("merchantlogin.php");
+
+                            
+                        } else {
+                            alert(json);
+                            return false;
+                        }
+                    }
+                
+            });
+        </script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
