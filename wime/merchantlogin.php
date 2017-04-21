@@ -14,7 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "Login Success";
             $cookie_name = "user";
 			$cookie_value = $username;
-			setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); 
+			setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+            setcookie("type", "merchant", time() + (86400 * 30), "/");  
         }else{
         	echo "Invalid username or password2";
         }
